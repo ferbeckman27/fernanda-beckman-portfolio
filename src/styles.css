@@ -63,7 +63,7 @@
 :root {
   --radius: 0.875rem;
 
-  --background: oklch(0.985 0.01 350);
+  --background: oklch(0.96 0.04 355);
   --foreground: oklch(0.22 0.04 160);
 
   --card: oklch(1 0 0);
@@ -92,7 +92,8 @@
   --leaf: oklch(0.62 0.15 155);
   --leaf-soft: oklch(0.9 0.07 155);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.95 0.05 10) 0%, oklch(0.93 0.06 155) 100%);
+  --gradient-hero: linear-gradient(135deg, oklch(0.93 0.08 10) 0%, oklch(0.9 0.09 155) 100%);
+  --gradient-bg: linear-gradient(160deg, oklch(0.95 0.06 10) 0%, oklch(0.94 0.05 60) 40%, oklch(0.93 0.07 155) 100%);
   --gradient-primary: linear-gradient(135deg, var(--rose), var(--leaf));
   --gradient-text: linear-gradient(135deg, oklch(0.55 0.18 5), oklch(0.5 0.16 155));
   --shadow-soft: 0 20px 50px -20px oklch(0.7 0.16 5 / 0.35);
@@ -131,6 +132,7 @@
 
 @utility bg-gradient-hero { background: var(--gradient-hero); }
 @utility bg-gradient-primary { background: var(--gradient-primary); }
+@utility bg-gradient-page { background: var(--gradient-bg); }
 @utility text-gradient {
   background: var(--gradient-text);
   -webkit-background-clip: text;
