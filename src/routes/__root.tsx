@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fernanda Beckman — Desenvolvedora & Estudante de SI" },
+      { title: "Fernanda Beckman" },
       { name: "description", content: "Portfólio de Fernanda Beckman, desenvolvedora freelancer em São Luís, MA. Java, Python, front-end e bancos de dados." },
       { name: "author", content: "Fernanda Beckman" },
-      { property: "og:title", content: "Fernanda Beckman — Portfólio" },
-      { property: "og:description", content: "Desenvolvedora freelancer e estudante de Sistemas de Informação." },
+      { property: "og:title", content: "Fernanda Beckman" },
+      { property: "og:description", content: "Portfólio de Fernanda Beckman, desenvolvedora freelancer em São Luís, MA. Java, Python, front-end e bancos de dados." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Fernanda Beckman" },
+      { name: "twitter:description", content: "Portfólio de Fernanda Beckman, desenvolvedora freelancer em São Luís, MA. Java, Python, front-end e bancos de dados." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/761093c9-8756-4b9b-b4b0-9b6eee8da459/id-preview-5abecd39--6c98c748-4399-4025-8a3b-dafd39fdcb19.lovable.app-1777404154325.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/761093c9-8756-4b9b-b4b0-9b6eee8da459/id-preview-5abecd39--6c98c748-4399-4025-8a3b-dafd39fdcb19.lovable.app-1777404154325.png" },
     ],
     links: [
       {
