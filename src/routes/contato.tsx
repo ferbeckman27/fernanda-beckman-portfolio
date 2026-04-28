@@ -34,7 +34,7 @@ function Contato() {
             {[
               { Icon: MapPin, label: "Localização", value: "São Luís, Maranhão" },
               { Icon: Mail, label: "E-mail", value: "fernanda@exemplo.com" },
-              { Icon: Phone, label: "WhatsApp", value: "+55 (98) 9 0000-0000" },
+              { Icon: Phone, label: "WhatsApp", value: "+55 (98) 98104-5788" },
             ].map(({ Icon, label, value }) => (
               <div key={label} className="p-5 rounded-2xl bg-card border border-border/60 flex items-center gap-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center text-primary-foreground shrink-0">

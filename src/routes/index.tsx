@@ -47,12 +47,12 @@ function Index() {
         </div>
 
         <div className="relative flex justify-center md:justify-end animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-30 animate-blob" />
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-hero shadow-soft overflow-hidden border-4 border-card animate-float">
+          <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-40 animate-blob" />
+          <div className="relative w-80 h-[26rem] md:w-96 md:h-[32rem] rounded-[2.5rem] bg-gradient-hero shadow-soft overflow-hidden border-4 border-card animate-float">
             <img
               src={fernanda}
               alt="Fernanda Beckman"
-              className="w-full h-full object-cover object-top scale-110"
+              className="w-full h-full object-contain object-center"
             />
           </div>
         </div>

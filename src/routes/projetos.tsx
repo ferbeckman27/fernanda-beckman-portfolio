@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/projetos")({
   head: () => ({
@@ -14,28 +14,25 @@ export const Route = createFileRoute("/projetos")({
 
 const projects = [
   {
-    title: "Sistema de Gestão Acadêmica",
-    desc: "Plataforma web para gerenciamento de notas, frequência e disciplinas com painéis para alunos e professores.",
-    tags: ["Java", "Spring", "PostgreSQL"],
-    accent: "from-rose to-rose-soft",
-  },
-  {
-    title: "API de Análise de Dados",
-    desc: "Serviço REST em Python para processamento e visualização de datasets corporativos com gráficos interativos.",
-    tags: ["Python", "FastAPI", "MySQL"],
+    title: "Arena Cedro Booking",
+    desc: "Sistema web para a Arena Cedro focado em agendamento de campos de futebol society, com gestão de horários e reservas.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    url: "https://arena-cedro.lovable.app",
     accent: "from-leaf to-leaf-soft",
   },
   {
-    title: "Landing Page Responsiva",
-    desc: "Site institucional com design moderno, animações suaves e otimização para mecanismos de busca.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    title: "Velocity",
+    desc: "Landing page moderna e responsiva para concessionária de carros esportivos, com animações dinâmicas e visual sofisticado.",
+    tags: ["React", "Tailwind", "Animações"],
+    url: "https://purple-drive-showcase.lovable.app",
     accent: "from-rose to-leaf",
   },
   {
-    title: "Dashboard Financeiro",
-    desc: "Painel web para acompanhamento de receitas e despesas com filtros, exportação e autenticação.",
-    tags: ["JavaScript", "Node.js", "PostgreSQL"],
-    accent: "from-leaf to-rose",
+    title: "Fizz & Flavor Hub",
+    desc: "Site animado para refrigerantes saborizados com home, sobre a marca, preços, carrinho de compras e mais.",
+    tags: ["React", "Tailwind", "E-commerce"],
+    url: "https://pop-flavor-spark.lovable.app",
+    accent: "from-rose to-rose-soft",
   },
 ];
 
@@ -75,12 +72,14 @@ function Projetos() {
                   ))}
                 </div>
                 <div className="flex gap-3 text-sm">
-                  <button className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline">
-                    <ExternalLink size={14} /> Demo
-                  </button>
-                  <button className="inline-flex items-center gap-1.5 text-secondary font-medium hover:underline">
-                    <Github size={14} /> Código
-                  </button>
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline"
+                  >
+                    <ExternalLink size={14} /> Acessar projeto
+                  </a>
                 </div>
               </div>
             </article>
