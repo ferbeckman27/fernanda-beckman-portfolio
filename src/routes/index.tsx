@@ -5,17 +5,7 @@ import arenaCedro from "@/assets/projects/arena-cedro.png";
 import velocity from "@/assets/projects/velocity.png";
 import fizz from "@/assets/projects/fizz.png";
 import becksCafe from "@/assets/projects/becks-cafe.jpg";
-import {
-  ArrowRight,
-  Sparkles,
-  MapPin,
-  GraduationCap,
-  Code2,
-  Mail,
-  Phone,
-  Send,
-  ExternalLink,
-} from "lucide-react";
+import { ArrowRight, Sparkles, MapPin, GraduationCap, Code2, Mail, Phone, Send, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/")({
@@ -71,7 +61,10 @@ function Index() {
   return (
     <Layout>
       {/* INÍCIO */}
-      <section id="inicio" className="scroll-mt-20 max-w-6xl mx-auto px-6 pt-12 md:pt-20 pb-24 grid md:grid-cols-2 gap-10 items-center">
+      <section
+        id="inicio"
+        className="scroll-mt-20 max-w-6xl mx-auto px-6 pt-12 md:pt-20 pb-24 grid md:grid-cols-2 gap-10 items-center"
+      >
         <div className="space-y-6 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent text-accent-foreground text-xs font-medium">
             <Sparkles size={14} className="text-primary" />
@@ -81,8 +74,8 @@ function Index() {
             Olá, sou <span className="text-gradient">Fernanda</span>.
           </h1>
           <p className="text-lg text-foreground/75 max-w-md leading-relaxed">
-            Desenvolvedora freelancer e estudante de Sistemas de Informação em
-            São Luís, Maranhão. Transformo ideias em soluções digitais.
+            Desenvolvedora freelancer e estudante de Sistemas de Informação em São Luís, Maranhão. Transformo ideias em
+            soluções digitais.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a
@@ -127,13 +120,10 @@ function Index() {
 
           <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
             <p className="text-lg leading-relaxed text-foreground/80">
-              Olá! Sou Fernanda Beckman, estudante de Sistemas de Informação e
-              desenvolvedora freelancer. Minha trajetória na tecnologia é movida
-              pela vontade de transformar problemas complexos em soluções
-              práticas e inovadoras. Expertise técnica abrangendo linguagens
-              como Java, Python e tecnologias front-end (HTML, CSS, JavaScript),
-              além de domínio em bancos de dados relacionais como MySQL e
-              PostgreSQL.
+              Olá! Sou Fernanda Beckman, estudante de Sistemas de Informação e desenvolvedora freelancer. Minha
+              trajetória na tecnologia é movida pela vontade de transformar problemas complexos em soluções práticas e
+              inovadoras. Expertise técnica abrangendo linguagens como Java, Python e tecnologias front-end (HTML, CSS,
+              JavaScript), além de domínio em bancos de dados relacionais como MySQL e PostgreSQL.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
@@ -178,9 +168,7 @@ function Index() {
           <h2 className="text-4xl md:text-5xl font-bold mb-3">
             Meus <span className="text-gradient">projetos</span>
           </h2>
-          <p className="text-foreground/70">
-            Uma seleção dos trabalhos que demonstram minha expertise técnica.
-          </p>
+          <p className="text-foreground/70">Uma seleção dos trabalhos que demonstram minha expertise técnica.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -209,7 +197,10 @@ function Index() {
                 <p className="text-sm text-foreground/70 mb-4 leading-relaxed">{p.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {p.tags.map((t) => (
-                    <span key={t} className="px-3 py-1 rounded-full bg-accent text-accent-foreground text-xs font-medium">
+                    <span
+                      key={t}
+                      className="px-3 py-1 rounded-full bg-accent text-accent-foreground text-xs font-medium"
+                    >
                       {t}
                     </span>
                   ))}
@@ -238,10 +229,13 @@ function Index() {
           <div className="space-y-4 animate-fade-up">
             {[
               { Icon: MapPin, label: "Localização", value: "São Luís, Maranhão" },
-              { Icon: Mail, label: "E-mail", value: "fernanda@exemplo.com" },
+              { Icon: Mail, label: "E-mail", value: "createbyfernanda@gmail.com" },
               { Icon: Phone, label: "WhatsApp", value: "+55 (98) 98104-5788" },
             ].map(({ Icon, label, value }) => (
-              <div key={label} className="p-5 rounded-2xl bg-card/80 backdrop-blur border border-border/60 flex items-center gap-4">
+              <div
+                key={label}
+                className="p-5 rounded-2xl bg-card/80 backdrop-blur border border-border/60 flex items-center gap-4"
+              >
                 <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center text-primary-foreground shrink-0">
                   <Icon size={20} />
                 </div>
@@ -264,18 +258,41 @@ function Index() {
           >
             <div>
               <label className="text-sm font-medium block mb-1.5">Nome</label>
-              <input required className="w-full px-4 py-2.5 rounded-xl bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary/40 transition" placeholder="Seu nome" />
+              <input
+                required
+                className="w-full px-4 py-2.5 rounded-xl bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary/40 transition"
+                placeholder="Seu nome"
+              />
             </div>
             <div>
               <label className="text-sm font-medium block mb-1.5">E-mail</label>
-              <input type="email" required className="w-full px-4 py-2.5 rounded-xl bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary/40 transition" placeholder="voce@email.com" />
+              <input
+                type="email"
+                required
+                className="w-full px-4 py-2.5 rounded-xl bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary/40 transition"
+                placeholder="voce@email.com"
+              />
             </div>
             <div>
               <label className="text-sm font-medium block mb-1.5">Mensagem</label>
-              <textarea required rows={5} className="w-full px-4 py-2.5 rounded-xl bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary/40 transition resize-none" placeholder="Conte sobre seu projeto..." />
+              <textarea
+                required
+                rows={5}
+                className="w-full px-4 py-2.5 rounded-xl bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary/40 transition resize-none"
+                placeholder="Conte sobre seu projeto..."
+              />
             </div>
-            <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-primary text-primary-foreground font-medium shadow-soft hover:scale-[1.02] transition-transform">
-              {sent ? "Mensagem enviada! ✨" : (<>Enviar mensagem <Send size={16} /></>)}
+            <button
+              type="submit"
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-primary text-primary-foreground font-medium shadow-soft hover:scale-[1.02] transition-transform"
+            >
+              {sent ? (
+                "Mensagem enviada! ✨"
+              ) : (
+                <>
+                  Enviar mensagem <Send size={16} />
+                </>
+              )}
             </button>
           </form>
         </div>
