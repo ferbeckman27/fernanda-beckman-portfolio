@@ -21,7 +21,7 @@ O portfólio serve como uma vitrine centralizada para exibir minha evolução no
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Front-end:** [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+* **Front-end:** [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Javascript].
 * **Build Tool:** [Vite](https://vitejs.dev/)
 * **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
 * **Plataforma de Desenvolvimento & Deploy:** [Lovable](https://lovable.dev/)
